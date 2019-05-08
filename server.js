@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.static(path.join(__dirname + "/dist")));
 
-const port = process.env.port || 4000;
+const port = process.env.PORT || 4000;
 
 app.listen(port, function() {
   console.log("App listening on " + port + "!");
